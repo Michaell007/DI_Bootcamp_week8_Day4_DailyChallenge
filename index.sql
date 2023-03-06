@@ -15,7 +15,7 @@ $db->query("
     BEGIN
         return a * b;
     END; $$
-      LANGUAGE 'plpgsql';
+      LANGUAGE 'plpgsql'; 
 ");
 
 $statement = $db->prepare("SELECT add(:a, :b)");
